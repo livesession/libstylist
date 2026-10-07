@@ -1,7 +1,0 @@
-{
-  "packageName": "@livesession/libstylist",
-  "type": "patch",
-  "dependentChangeType": "none",
-  "email": "zdunekhere@gmail.com",
-  "comment": "Declare @typescript-eslint/utils as a dependency: the ./eslint entry imports it at runtime, so it failed to load in a consumer that installs only @typescript-eslint/parser (or installs typescript-eslint without hoisting). @types/react is now an optional peer for the ./jsx typings."
-}

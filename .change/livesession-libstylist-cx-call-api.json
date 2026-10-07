@@ -1,7 +1,0 @@
-{
-  "packageName": "@livesession/libstylist",
-  "type": "minor",
-  "dependentChangeType": "patch",
-  "email": "zdunekhere@gmail.com",
-  "comment": "First release of @livesession/libstylist, LiveSession's tooling for a self-describing DOM: every component root is a namespaced custom tag (<elo-alert>) or a value-less marker (<button elo-button>), and styling goes through hashed, value-less part attributes, never class. Ships the cx() runtime (cx, CxAttrs, cxData, hostProps, unsetRef, plus the legacy() / legacyClassName() helpers for a codebase mid-migration), the Babel and Vite plugins (required for inline cx() data literals — without them the data renders nothing and a dev warning fires; library builds bundle the runtime as virtual:libstylist/runtime), the PostCSS plugin and registry (part maps with $tags, stylist-registry.json, the lock projection), the ESLint rules and stylelint preset, libstylist check / burndown, gen-types, hash, the codemod from the cx attribute to cx() calls, and migrate-selectors, which rewrites a consumer app's ls-* selectors from @livesession/eloquentui-css/migration/ls-to-elo.json. The design-system packages bundle the runtime, so consumers install libstylist only to author their own cx() code or run the CLI."
-}

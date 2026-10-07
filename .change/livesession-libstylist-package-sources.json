@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "feat(libstylist): packages whose sources are not `src`, and the aliases they import each other by — `sources` on a config package (and in a package.json `libstylist` field, which `workspacePackages()` passes on and a config value must equal; default `[\"src\"]`; package-relative, existing, never nested) is what `gen-types` scans for custom tags (with `--config`, or from the package.json field; the generated header names the directories) and what `stylistWorkspace()`'s JSX transform owns (`workspaceSourcePattern`); a top-level `typescript: { paths }` (tsconfig `paths` semantics, targets relative to the config file) joins the package-name paths in the TypeScript program of `check` and the codemod, so a component imported as `~/pages/settings/…` is no longer `any` (no false R105/T203). Malformed values are config errors; a config without either behaves exactly as before.",
-  "packageName": "@livesession/libstylist",
-  "email": "zdunekhere@gmail.com",
-  "dependentChangeType": "none"
-}
