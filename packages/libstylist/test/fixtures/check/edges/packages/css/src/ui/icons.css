@@ -1,0 +1,4 @@
+@stylist root Icons.Close as close;
+@stylist root Icons.Open as open;
+
+.close, .open { fill: red; }

@@ -1,0 +1,6 @@
+{
+  "name": "@shop/ui",
+  "private": true,
+  "imports": { "#css": "./src/css/index.ts", "#components": "./src/components/index.ts", "#render": "./src/render/index.ts" },
+  "libstylist": { "prefix": "app", "namespace": "core", "namespaces": { "src/render": "render", "src/css/render": "render" } }
+}

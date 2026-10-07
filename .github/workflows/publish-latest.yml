@@ -1,0 +1,36 @@
+name: Publish Latest
+
+# Publishes the release in .release/latest.json with no tag event: the recovery
+# for a release whose tags never started Publish Tag (tags pushed by
+# GITHUB_TOKEN, when TAG_RELEASE_TOKEN is unset), or one that half failed. Run
+# it from the Actions tab on master: dry-run is ticked by default and shows the
+# plan; untick it to publish.
+on:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: "Comma-separated package names (empty = the whole release)"
+        required: false
+        default: ""
+      dry-run:
+        description: "Only report what would be published (untick to publish)"
+        type: boolean
+        default: true
+
+concurrency:
+  group: publish-latest
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    permissions:
+      contents: read
+      packages: write
+    uses: livesession/public-release-actions/.github/workflows/publish-latest.yml@v0
+    with:
+      # must EXACTLY match package.json packageManager (mismatch errors in action-setup)
+      pnpm-version: "10.33.2"
+      build-command: pnpm build # the same as publish-tag.yml
+      seeds: '{"@livesession/libstylist": "0.0.0"}'
+      packages: ${{ inputs.packages }}
+      dry-run: ${{ inputs.dry-run }}

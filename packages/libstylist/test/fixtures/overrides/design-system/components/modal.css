@@ -1,0 +1,65 @@
+@stylist root Modal display block;
+@stylist root Modal.Header as header display block;
+@stylist root Modal.Body as body display block;
+@stylist root Modal.Footer as footer display block;
+
+.root {
+    position: fixed;
+    inset: 0;
+    display: flex;
+
+    &[data-open] {
+        animation: fade-in 0.2s;
+    }
+}
+
+.frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+
+    &[data-bordered]::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+}
+
+.header {
+    position: relative;
+    padding: 16px;
+}
+
+.close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.body {
+    padding: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+
+    & button:first-child {
+        margin-right: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .frame {
+        transition: none;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

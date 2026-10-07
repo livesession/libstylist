@@ -1,0 +1,8 @@
+@stylist root Deep display block;
+@stylist root Framed as framed display block;
+@stylist root Helpered as helpered;
+@stylist root Optioned as optioned;
+@stylist root Shorthanded as shorthanded;
+
+.root { color: red; }
+.field, .frame, .framed, .list, .helpered, .optioned, .shorthanded { margin: 0; }

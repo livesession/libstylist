@@ -1,0 +1,5 @@
+@stylist root Thief display block;
+@stylist root Ghost.Part as ghost;
+
+.root { color: red; }
+.ghost { color: blue; }

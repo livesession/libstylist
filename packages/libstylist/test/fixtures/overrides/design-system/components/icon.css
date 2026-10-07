@@ -1,0 +1,10 @@
+@stylist root Icon;
+
+.root {
+    display: inline-flex;
+    width: 1em;
+}
+
+.glyph {
+    fill: currentColor;
+}

@@ -1,0 +1,5 @@
+@stylist root Sheet display block;
+@stylist root Sheet.Panel as panel;
+
+.root { color: red; }
+.panel { position: fixed; }

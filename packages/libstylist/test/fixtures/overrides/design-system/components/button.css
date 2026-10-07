@@ -1,0 +1,86 @@
+/* Button: a marker root (<button ds-button>); the sizes and kinds write custom properties, the base reads them */
+@stylist root Button;
+
+.root {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 4px;
+    color: var(--btn-fg, white);
+    background-color: var(--btn-bg);
+    padding: var(--btn-py, 4px) var(--btn-px, 8px);
+    height: var(--btn-h);
+
+    &[data-size="small"] {
+        --btn-h: 24px;
+        --btn-icon-w: 12px;
+    }
+    &[data-size="medium"] {
+        --btn-h: 32px;
+        --btn-icon-w: 16px;
+    }
+    &[data-kind="primary"][data-theme="fill"] {
+        --btn-bg: blue;
+        color: white;
+        border-radius: 8px;
+    }
+    &:hover,
+    &[data-force="hover"] {
+        --btn-bg: navy;
+    }
+    &:focus-visible {
+        outline: 2px solid var(--btn-ring, blue);
+    }
+
+    /* the icon slot, the chevron, and any Icon passed as content */
+    & :is(.icon, .chevron, :component(Icon)) {
+        display: flex;
+        width: var(--btn-icon-w);
+    }
+    & :is(.icon[data-align="right"], .chevron) {
+        margin-left: 8px;
+    }
+    & .icon[data-align="left"] {
+        margin-right: 8px;
+    }
+    &[data-loading] .content .loader {
+        display: flex;
+        top: 0;
+        left: 0;
+    }
+}
+
+.label {
+    font-weight: 400;
+    display: flex;
+}
+
+.content {
+    display: flex;
+}
+
+.children {
+    white-space: nowrap;
+}
+
+.chevron {
+    transition: transform 0.2s;
+}
+
+.loader {
+    display: none;
+
+    &[data-hidden] {
+        visibility: hidden !important;
+    }
+    &[data-spin] {
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}

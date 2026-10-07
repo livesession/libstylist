@@ -1,0 +1,11 @@
+/* one sheet shared by two components */
+@stylist root ControlsBar display block;
+@stylist root PlayButton as play;
+
+.root {
+    display: flex;
+}
+
+.play {
+    width: 24px;
+}

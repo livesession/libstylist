@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  # Also on direct pushes to master. Without this a push to master runs
+  # nothing at all: tag-release only fires when .release/latest.json changes,
+  # and the release workflows are parked.
+  push:
+    branches: [master]
+
+jobs:
+  # Every PR touching the package must carry a beachball change file — the
+  # input the release workflows turn into versions and changelogs. Three steps,
+  # no dependency install.
+  change-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: microsoft/beachball/actions/install-beachball@install-beachball_v3
+      - run: beachball check
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # pnpm version comes from package.json's packageManager field —
+      # action-setup errors when both specify one
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      # no registry token: the workspace depends on no @livesession package
+      - run: pnpm install --frozen-lockfile
+      - name: Build
+        run: pnpm build
+      - name: Typecheck
+        run: pnpm typecheck
+      # node:test over packages/libstylist/test: the runtime, the transform (Babel and
+      # Vite), PostCSS and the registry, the ESLint rules and stylelint preset, the
+      # checker, the codemod, the CLI and the workspace build. The design-system
+      # smoke tests skip here (LIBSTYLIST_DESIGN_SYSTEM is unset — see
+      # packages/libstylist/test/design-system.ts).
+      - name: Test
+        run: pnpm test
+      - name: Working tree must stay clean
+        uses: microsoft/beachball/actions/check-for-modified-files@check-for-modified-files_v3
+        with:
+          extraError: "A build step modified committed files — regenerate and commit them."

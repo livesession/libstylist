@@ -1,0 +1,10 @@
+@stylist root ListCollection.Root display block;
+@stylist root ListCollection.Item as item;
+
+.root {
+    display: grid;
+}
+
+.item {
+    display: contents;
+}

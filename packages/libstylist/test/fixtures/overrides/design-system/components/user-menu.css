@@ -1,0 +1,11 @@
+/* a family with no identity of its own: only its members have roots */
+@stylist root UserMenu.Header as header display block;
+@stylist root UserMenu.Item as item;
+
+.header {
+    padding: 8px;
+}
+
+.item {
+    display: flex;
+}

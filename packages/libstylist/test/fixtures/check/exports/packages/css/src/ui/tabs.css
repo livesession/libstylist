@@ -1,0 +1,7 @@
+@stylist root Tabs display flex;
+@stylist root Tabs.Item as item;
+@stylist root Tabs.Panel as panel display block;
+
+.root { gap: 8px; }
+.item { color: red; }
+.panel { color: blue; }

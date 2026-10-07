@@ -1,0 +1,5 @@
+@stylist root Pair as pair display block;
+@stylist root Toggle as toggle;
+@stylist root Double as double display block;
+
+.pair, .toggle, .double { color: red; }

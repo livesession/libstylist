@@ -1,0 +1,5 @@
+@stylist root Dialog display block;
+@stylist root Dialog.Footer as footer display flex;
+
+.root { color: red; }
+.footer { gap: 8px; }

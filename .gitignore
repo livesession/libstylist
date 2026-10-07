@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+.DS_Store
+# release-actions' restore-versions writes it in CI; never committed
+.beachball-restore.json
+.claude/settings.local.json

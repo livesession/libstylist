@@ -1,0 +1,4 @@
+@stylist root Caller display block;
+
+.root { color: red; }
+.action, .box, .aliased, .close, .confirm { margin: 8px; }

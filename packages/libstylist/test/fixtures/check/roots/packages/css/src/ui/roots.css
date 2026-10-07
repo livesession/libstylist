@@ -1,0 +1,11 @@
+@stylist root Wrong as wrong display block;
+@stylist root NoForward as noforward display block;
+@stylist root NoPart as nopart display block;
+@stylist root Wrapped as wrapped display block;
+@stylist root ViaConst as viaconst display block;
+@stylist root Shell as shell display block;
+@stylist root Inlined as inlined display block;
+@stylist root Blocked as blocked display block;
+@stylist root Framed2 as framed2 display block;
+
+.wrong, .noforward, .nopart, .wrapped, .viaconst, .shell, .inlined, .blocked, .framed2 { color: red; }

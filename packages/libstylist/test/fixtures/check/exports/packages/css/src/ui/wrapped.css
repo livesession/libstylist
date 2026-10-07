@@ -1,0 +1,7 @@
+@stylist root Memoed as memoed display block;
+@stylist root Reffed as reffed;
+@stylist root Both as both;
+
+.memoed { color: red; }
+.reffed { color: blue; }
+.both { display: inline-block; }

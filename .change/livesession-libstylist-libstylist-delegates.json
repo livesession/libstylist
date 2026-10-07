@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "feat(libstylist): a component declared in a package whose package.json has a libstylist prefix (the design system's dist, linked or installed) is a delegate to the checker, not a third-party component — an app component may root on `<Table crm-x {...cx(cn.root, rest)}>` without a wrapper (without the marker: R106; a marker forwarded onto one its declaration marks `@libstylistRoot none`, such as `Loader` or a provider, never reaches the DOM: R106 too); a `#` subpath import (`#components`) is the package's own module to the lint rules and the codemod, like a relative one",
+  "packageName": "@livesession/libstylist",
+  "email": "zdunekhere@gmail.com",
+  "dependentChangeType": "none"
+}

@@ -1,0 +1,5 @@
+@stylist root Layer as layer display block;
+@stylist root Hosted as hosted display block;
+@stylist root Doubled as doubled display block;
+
+.layer, .hosted, .doubled { color: red; }

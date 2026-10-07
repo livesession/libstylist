@@ -1,0 +1,25 @@
+name: Publish Tag
+
+on:
+  push:
+    tags: ["@livesession/**"]
+
+# One group per tag, not one group for all publishing: a shared group keeps
+# one run going and exactly one queued and cancels the rest. Keyed by the ref,
+# each tag publishes independently; re-pushing the *same* tag still supersedes
+# its own in-flight run, so two publishes of one package cannot race.
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    permissions:
+      contents: read
+      packages: write
+    uses: livesession/public-release-actions/.github/workflows/publish-tag.yml@v0
+    with:
+      # must EXACTLY match package.json packageManager (mismatch errors in action-setup)
+      pnpm-version: "10.33.2"
+      build-command: pnpm build
+      seeds: '{"@livesession/libstylist": "0.0.0"}'

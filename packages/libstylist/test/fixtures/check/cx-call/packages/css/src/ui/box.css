@@ -1,0 +1,9 @@
+@stylist root Box display block;
+@stylist root Aliased as aliased display block;
+@stylist root Mapped as mapped display block;
+@stylist root Listed as listed display block;
+
+.root { color: red; }
+.aliased { color: blue; }
+.mapped { color: green; }
+.listed { color: teal; }

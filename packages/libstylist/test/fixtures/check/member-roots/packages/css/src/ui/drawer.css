@@ -1,0 +1,5 @@
+@stylist root Drawer display block;
+@stylist root Drawer.Body as body display block;
+
+.root { color: red; }
+.body { padding: 16px; }

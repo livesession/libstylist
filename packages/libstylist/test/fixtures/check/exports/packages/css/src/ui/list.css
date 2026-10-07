@@ -1,0 +1,5 @@
+@stylist root List.Root display block;
+@stylist root List.Item as item;
+
+.root { margin: 0; }
+.item { color: red; }

@@ -1,0 +1,4 @@
+{
+    "//": "jsx/ holds declarations only. Its CommonJS format lets CommonJS and ES modules both type-import @livesession/libstylist/jsx under node16/nodenext (TS1541 otherwise, and TS 4.9 has no resolution-mode syntax).",
+    "type": "commonjs"
+}

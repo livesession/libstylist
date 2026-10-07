@@ -1,0 +1,29 @@
+name: Release PR
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Partial release: comma-separated package names (empty = everything pending)."
+        required: false
+        default: ""
+
+# required by should-release batch mode: queue runs, never cancel
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release-pr:
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+      packages: read # restore-versions reads published versions from the registry
+    uses: livesession/public-release-actions/.github/workflows/release-pr.yml@v0
+    with:
+      # must EXACTLY match package.json packageManager (mismatch errors in action-setup)
+      pnpm-version: "10.33.2"
+      scope: ${{ inputs.scope || '' }}
+      # first-publish starting version: the first minor change file lands on 0.1.0
+      seeds: '{"@livesession/libstylist": "0.0.0"}'

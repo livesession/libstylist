@@ -1,0 +1,6 @@
+@stylist root Field display block;
+@stylist root Dropper as dropper display block;
+@stylist root SlotUser as slotuser display block;
+
+.root, .dropper, .slotuser { color: red; }
+.input, .field-input { margin: 0; }

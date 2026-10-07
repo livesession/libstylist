@@ -1,0 +1,6 @@
+@stylist root Overlay as overlay display block;
+@stylist root Floating as floating display block;
+@stylist root Hint as hint;
+@stylist root Tip as tip;
+
+.overlay, .floating, .hint, .tip { color: red; }

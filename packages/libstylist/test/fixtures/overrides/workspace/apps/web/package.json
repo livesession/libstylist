@@ -1,0 +1,5 @@
+{
+  "name": "web",
+  "private": true,
+  "dependencies": { "@ds/css": "*", "@ds/react": "*", "@ds/gram": "*", "@shop/ui": "*" }
+}

@@ -1,0 +1,7 @@
+# pnpm does not read the "workspaces" field in package.json.
+packages:
+  - "packages/*"
+
+# vite (a devDependency of the package) brings esbuild, whose install script pnpm 10 runs only when allowed here
+onlyBuiltDependencies:
+  - esbuild

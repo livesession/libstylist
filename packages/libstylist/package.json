@@ -1,0 +1,207 @@
+{
+  "name": "@livesession/libstylist",
+  "version": "0.0.0-dev",
+  "description": "Tooling for building UIs the LiveSession way: namespaced custom-element roots, cx part attributes, dev annotations and the rules that enforce them",
+  "type": "module",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/livesession/libstylist.git",
+    "directory": "packages/libstylist"
+  },
+  "homepage": "https://github.com/livesession/libstylist#readme",
+  "bugs": {
+    "url": "https://github.com/livesession/libstylist/issues"
+  },
+  "author": "LiveSession <hello@livesession.io>",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "jsx",
+    "docs",
+    "CLAUDE.md",
+    "README.md",
+    "SPEC.md"
+  ],
+  "bin": {
+    "libstylist": "./bin/libstylist.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./conventions": {
+      "types": "./dist/conventions/index.d.ts",
+      "default": "./dist/conventions/index.js"
+    },
+    "./naming": {
+      "types": "./dist/naming/index.d.ts",
+      "default": "./dist/naming/index.js"
+    },
+    "./hash": {
+      "types": "./dist/hash/index.d.ts",
+      "default": "./dist/hash/index.js"
+    },
+    "./runtime": {
+      "types": "./dist/runtime/index.d.ts",
+      "default": "./dist/runtime/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.js"
+    },
+    "./babel": {
+      "types": "./dist/babel/index.d.ts",
+      "default": "./dist/babel/index.js"
+    },
+    "./postcss": {
+      "types": "./dist/postcss/index.d.ts",
+      "default": "./dist/postcss/index.js"
+    },
+    "./registry": {
+      "types": "./dist/registry/index.d.ts",
+      "default": "./dist/registry/index.js"
+    },
+    "./vite": {
+      "types": "./dist/vite/index.d.ts",
+      "default": "./dist/vite/index.js"
+    },
+    "./eslint": {
+      "types": "./dist/eslint/index.d.ts",
+      "default": "./dist/eslint/index.js"
+    },
+    "./stylelint": {
+      "types": "./dist/stylelint/index.d.ts",
+      "default": "./dist/stylelint/index.js"
+    },
+    "./check": {
+      "types": "./dist/check/index.d.ts",
+      "default": "./dist/check/index.js"
+    },
+    "./workspace": {
+      "types": "./dist/workspace/index.d.ts",
+      "default": "./dist/workspace/index.js"
+    },
+    "./jsx": {
+      "types": "./jsx/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "conventions": [
+        "dist/conventions/index.d.ts"
+      ],
+      "naming": [
+        "dist/naming/index.d.ts"
+      ],
+      "hash": [
+        "dist/hash/index.d.ts"
+      ],
+      "runtime": [
+        "dist/runtime/index.d.ts"
+      ],
+      "core": [
+        "dist/core/index.d.ts"
+      ],
+      "babel": [
+        "dist/babel/index.d.ts"
+      ],
+      "postcss": [
+        "dist/postcss/index.d.ts"
+      ],
+      "registry": [
+        "dist/registry/index.d.ts"
+      ],
+      "vite": [
+        "dist/vite/index.d.ts"
+      ],
+      "eslint": [
+        "dist/eslint/index.d.ts"
+      ],
+      "stylelint": [
+        "dist/stylelint/index.d.ts"
+      ],
+      "check": [
+        "dist/check/index.d.ts"
+      ],
+      "workspace": [
+        "dist/workspace/index.d.ts"
+      ],
+      "jsx": [
+        "jsx/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/plugin-syntax-jsx": "^7.29.0",
+    "@babel/plugin-syntax-typescript": "^7.29.0",
+    "@typescript-eslint/utils": "^8.68.0",
+    "postcss": "^8.4.47",
+    "postcss-selector-parser": "^7.0.0"
+  },
+  "peerDependencies": {
+    "@types/react": ">=18.2.7",
+    "eslint": ">=9",
+    "postcss-nesting": ">=14",
+    "stylelint": ">=16",
+    "typescript": ">=5",
+    "vite": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    },
+    "postcss-nesting": {
+      "optional": true
+    },
+    "stylelint": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.29.0",
+    "@babel/plugin-transform-react-jsx": "^7.29.0",
+    "@babel/preset-typescript": "^7.29.0",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^16.18.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@typescript-eslint/parser": "^8.68.0",
+    "eslint": "^9.15.0",
+    "postcss-nesting": "^14.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "stylelint": "^16.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.3",
+    "typescript-4.9": "npm:typescript@~4.9.5",
+    "typescript-eslint": "^8.68.0",
+    "vite": "^5.4.8"
+  },
+  "libstylist": {
+    "role": "tooling"
+  }
+}

@@ -1,0 +1,8 @@
+@stylist root Switcher as switcher display block;
+@stylist root Nested as nested display block;
+@stylist root Guarded as guarded display block;
+@stylist root HalfDiv as halfdiv display block;
+@stylist root Memoized as memoized display block;
+@stylist root Suspended as suspended display block;
+
+.switcher, .nested, .guarded, .halfdiv, .memoized, .suspended { color: red; }

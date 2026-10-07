@@ -1,0 +1,5 @@
+@stylist root Base display block;
+@stylist root Uses as uses display block;
+
+.root { color: red; }
+.uses, .top, .mid2 { margin: 0; }

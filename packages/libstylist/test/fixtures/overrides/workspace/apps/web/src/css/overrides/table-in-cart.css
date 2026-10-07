@@ -1,0 +1,6 @@
+/* Scoped: only the Tables inside RenderCart (the app's render component). */
+@stylist override Table from "@ds/react" within RenderCart;
+
+.td {
+    color: rgb(4, 5, 6);
+}

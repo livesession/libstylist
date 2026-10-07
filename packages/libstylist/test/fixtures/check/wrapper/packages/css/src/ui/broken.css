@@ -1,0 +1,5 @@
+@stylist root Maybe as maybe;
+@stylist root Twice as twice display block;
+@stylist root Bare as bare;
+
+.maybe, .twice, .bare { color: red; }

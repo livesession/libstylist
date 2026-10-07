@@ -1,0 +1,13 @@
+/* Resets: the header starts from scratch (its `position: relative` re-declared — the close button still
+   positions against it); the frame too, with no layout re-declared (the build notes what it drops). */
+@stylist override Modal from "@ds/react";
+@stylist reset header frame;
+
+.header {
+    position: relative;
+    padding: 12px 16px;
+    color: rgb(7, 8, 9);
+}
+.frame {
+    border-radius: 12px;
+}

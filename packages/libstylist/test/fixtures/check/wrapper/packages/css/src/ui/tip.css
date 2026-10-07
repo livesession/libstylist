@@ -1,0 +1,4 @@
+@stylist root Tip display inline-block;
+
+.root { position: relative; }
+.text { color: red; }

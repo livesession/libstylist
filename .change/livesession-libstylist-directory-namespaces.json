@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "feat(libstylist): directory namespaces — package.json `libstylist.namespaces` maps package-relative directories to a namespace of their own (`\"src/render\": \"render\"`, or `{ namespace, segment?, word? }`); a file takes the longest directory containing it, so an app's `RenderInvitationRow` in src/render is `<crm-render-invitationrow>`. `resolvePackageConfig` returns the file's effective config (plus its base config and directory) through a cached package finder (`findLibstylistPackage`) and a per-file pick (`packageConfigOf`); the transform, the lint rules (tag-name, rootLocals, segment discovery), gen-types and the checker follow it",
+  "packageName": "@livesession/libstylist",
+  "email": "zdunekhere@gmail.com",
+  "dependentChangeType": "none"
+}

@@ -1,0 +1,46 @@
+/* Table: custom-tag roots for the table and its row and cell members */
+@stylist root Table display block;
+@stylist root Table.Tr as tr display block;
+@stylist root Table.Td as td display block;
+@stylist root Table.Button as button;
+
+.root {
+    --table-gap: 8px;
+    border: 1px solid;
+
+    &[data-density="compact"] .td {
+        padding: 4px;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.tr {
+    border-bottom: 1px solid;
+}
+
+.row:nth-child(2 of .tr) {
+    background: grey;
+}
+
+.cell {
+    display: flex;
+    flex: 1;
+}
+
+.td {
+    flex-flow: wrap;
+    gap: var(--table-gap);
+}
+
+.td,
+.th {
+    --cell-pad: 8px;
+    padding: var(--cell-pad);
+}
+
+.button {
+    cursor: pointer;
+}

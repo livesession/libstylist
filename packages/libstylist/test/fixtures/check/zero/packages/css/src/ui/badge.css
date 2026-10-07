@@ -1,0 +1,4 @@
+@stylist root Badge display inline-flex;
+
+.root { gap: 4px; }
+.label { font-weight: 600; }

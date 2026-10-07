@@ -1,0 +1,7 @@
+@stylist root Action as action;
+@stylist root Listing as listing;
+@stylist root Loose as loose;
+@stylist root Boxy as boxy;
+@stylist root Picked as picked;
+
+.action, .listing, .loose, .boxy, .picked { color: red; }

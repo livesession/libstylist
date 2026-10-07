@@ -1,0 +1,13 @@
+/* another component's contract for Button and Modal.Header inside it (foreign rules for a reset) */
+@stylist root Chat display block;
+
+.root {
+    display: grid;
+
+    & :component(Button) {
+        margin: 0;
+    }
+    & > :component(Modal.Header) {
+        border-bottom: 1px solid;
+    }
+}

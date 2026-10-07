@@ -1,0 +1,6 @@
+{
+  "name": "@fx/web",
+  "private": true,
+  "imports": { "#css": "./app/pages/settings/css/index.ts" },
+  "libstylist": { "prefix": "crm", "namespace": "settings" }
+}

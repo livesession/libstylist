@@ -1,0 +1,3 @@
+/* not flipped yet: still built with legacy class names, so its parts are not checked */
+.root { color: red; }
+.unused { color: blue; }

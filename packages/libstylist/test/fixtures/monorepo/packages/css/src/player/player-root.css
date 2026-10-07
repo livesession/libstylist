@@ -1,0 +1,10 @@
+/* The player group's one sheet: git keeps the directory the CONFIG.md example's cssGroup names. */
+@stylist root PlayerRoot display block;
+
+.root {
+    display: block;
+}
+
+.scaled {
+    transform-origin: 0 0;
+}

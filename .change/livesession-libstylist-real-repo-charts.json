@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "test: the real-repository expectations count the charts package (eleven packages; the charts segment; the real-sheets smoke test compiles the charts group too)",
+  "packageName": "@livesession/libstylist",
+  "email": "zdunekhere@gmail.com",
+  "dependentChangeType": "none"
+}

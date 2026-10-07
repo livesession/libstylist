@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "feat(libstylist): the workspace build for app packages that keep their sheets next to their sources — `libstylist build [--config] [--check] [--watch]` writes each package's generated `#css` part-map module (side-effect sheet imports, one `as const` map per sheet; `no-hash-literal` skips it), the committed lock (`css.lock`; compared as data and written with the indentation on disk, so a formatter's rewrite is no drift) and the gitignored registry (`css.registry`, which the checker, the codemod and a config loaded with `loadCheckConfig` default to the build's output when no package has a cssGroup; S309 then says to run `libstylist build`), failing on registry errors and on export names shared within one module or specifier; `stylistWorkspace()` from `@livesession/libstylist/vite` runs the transform over the workspace packages' sources and compiles their sheets at import time into cascade layers (`css.layers`), rewriting part maps in dev (catching up on every package once a registry error is fixed) and failing `vite build` on stale ones; `@livesession/libstylist/workspace` adds `workspacePackages`/`partMapsFor` (config packages discovered from pnpm-workspace.yaml), `buildWorkspace`, `compileSheet`, `renderPartMapModule` and `runWorkspaceBuild`; `gen-types --config` covers every package of a config; `packages[].sheets` may be `[]`; postcss-nesting is an optional peer",
+  "packageName": "@livesession/libstylist",
+  "email": "zdunekhere@gmail.com",
+  "dependentChangeType": "none"
+}

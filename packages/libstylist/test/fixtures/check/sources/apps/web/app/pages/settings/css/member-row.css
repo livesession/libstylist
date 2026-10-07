@@ -1,0 +1,4 @@
+@stylist root MemberRow display flex;
+
+.root { gap: 8px; }
+.name { font-weight: 600; }

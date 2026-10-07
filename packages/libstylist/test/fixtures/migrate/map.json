@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "prefix": "elo",
+  "classes": {
+    "ls-alert": {
+      "kind": "root",
+      "package": "@livesession/eloquentui-react",
+      "component": "Alert",
+      "scope": "alert",
+      "part": "root",
+      "attr": "_cxclass_elo-aaaaaa",
+      "selector": "[_cxclass_elo-aaaaaa]",
+      "identity": "elo-alert",
+      "identityKind": "tag",
+      "identitySelector": "elo-alert",
+      "legacy": { "export": ".", "local": "root" },
+      "partMap": { "module": "@livesession/eloquentui-css", "export": "alert", "key": "root" }
+    },
+    "ls-alert__icon": {
+      "kind": "part",
+      "scope": "alert",
+      "part": "icon",
+      "attr": "_cxclass_elo-bbbbbb",
+      "selector": "[_cxclass_elo-bbbbbb]",
+      "legacy": { "export": ".", "local": "icon" },
+      "partMap": { "module": "@livesession/eloquentui-css", "export": "alert", "key": "icon" }
+    },
+    "ls-alert__close": { "kind": "part", "scope": "alert", "part": "close", "attr": "_cxclass_elo-bbbbb2", "selector": "[_cxclass_elo-bbbbb2]" },
+    "ls-button": {
+      "kind": "root",
+      "component": "Button",
+      "scope": "button",
+      "part": "root",
+      "attr": "_cxclass_elo-cccccc",
+      "selector": "[_cxclass_elo-cccccc]",
+      "identity": "elo-button",
+      "identityKind": "marker",
+      "identitySelector": "[elo-button]"
+    },
+    "ls-button__content": { "kind": "part", "scope": "button", "part": "content", "attr": "_cxclass_elo-dddddd", "selector": "[_cxclass_elo-dddddd]" },
+    "ls-button__label": { "kind": "part", "scope": "button", "part": "label", "attr": "_cxclass_elo-uuuuuu", "selector": "[_cxclass_elo-uuuuuu]" },
+    "ls-icon": {
+      "kind": "root",
+      "component": "Icon",
+      "scope": "icon",
+      "part": "root",
+      "attr": "_cxclass_elo-eeeeee",
+      "selector": "[_cxclass_elo-eeeeee]",
+      "identity": "elo-icon",
+      "identityKind": "marker",
+      "identitySelector": "[elo-icon]"
+    },
+    "ls-table": {
+      "kind": "root",
+      "component": "Table",
+      "scope": "table",
+      "part": "root",
+      "attr": "_cxclass_elo-ffffff",
+      "selector": "[_cxclass_elo-ffffff]",
+      "identity": "elo-table",
+      "identityKind": "tag",
+      "identitySelector": "elo-table"
+    },
+    "ls-table__td": {
+      "kind": "part",
+      "component": "Table.Td",
+      "scope": "table",
+      "part": "td",
+      "attr": "_cxclass_elo-gggggg",
+      "selector": "[_cxclass_elo-gggggg]",
+      "identity": "elo-table-td",
+      "identityKind": "tag",
+      "identitySelector": "elo-table-td"
+    },
+    "ls-heading": {
+      "kind": "root",
+      "component": "Heading",
+      "scope": "heading",
+      "part": "root",
+      "attr": "_cxclass_elo-hhhhhh",
+      "selector": "[_cxclass_elo-hhhhhh]",
+      "identity": "elo-heading",
+      "identityKind": "marker",
+      "identitySelector": "[elo-heading]"
+    },
+    "ls-heading__container": { "kind": "part", "scope": "heading", "part": "container", "attr": "_cxclass_elo-iiiiii", "selector": "[_cxclass_elo-iiiiii]" },
+    "ls-tooltip": {
+      "kind": "root",
+      "scope": "tooltip",
+      "part": "bubble",
+      "attr": "_cxclass_elo-jjjjjj",
+      "selector": "[_cxclass_elo-jjjjjj]",
+      "note": "legacy local \"root\" is the part \"bubble\" now (migration/renames.json)",
+      "legacy": { "export": ".", "local": "root" },
+      "partMap": { "module": "@livesession/eloquentui-css", "export": "tooltip", "key": "bubble" }
+    },
+    "ls-tabs": {
+      "kind": "root",
+      "component": "Tabs",
+      "scope": "tabs",
+      "part": "root",
+      "attr": "_cxclass_elo-kkkkkk",
+      "selector": "[_cxclass_elo-kkkkkk]",
+      "identity": "elo-tabs",
+      "identityKind": "marker",
+      "identitySelector": "[elo-tabs]"
+    },
+    "ls-tabs__item": { "kind": "part", "scope": "tabs", "part": "item", "attr": "_cxclass_elo-llllll", "selector": "[_cxclass_elo-llllll]" },
+    "ls-dock": {
+      "kind": "root",
+      "component": "Dock",
+      "scope": "dock",
+      "part": "root",
+      "attr": "_cxclass_elo-mmmmmm",
+      "selector": "[_cxclass_elo-mmmmmm]",
+      "identity": "elo-app-dock",
+      "identityKind": "tag",
+      "identitySelector": "elo-app-dock"
+    },
+    "ls-text-input__field": { "kind": "part", "scope": "text-input", "part": "field", "attr": "_cxclass_elo-nnnnnn", "selector": "[_cxclass_elo-nnnnnn]" },
+    "ls-toast__title": { "kind": "part", "scope": "toast", "part": "title", "attr": "_cxclass_elo-oooooo", "selector": "[_cxclass_elo-oooooo]" },
+    "ls-color": { "kind": "removed", "scope": "color", "note": "a Storybook-only swatch, never a component contract", "pending": "P5" },
+    "ls-card": {
+      "kind": "root",
+      "component": "Card",
+      "scope": "card",
+      "part": "root",
+      "attr": "_cxclass_elo-tttttt",
+      "selector": "[_cxclass_elo-tttttt]",
+      "identity": "elo-card",
+      "identityKind": "tag",
+      "identitySelector": ":is(elo-card,[elo-card])",
+      "polymorphic": true
+    }
+  },
+  "literals": {
+    "icon-wrapper": {
+      "kind": "tag",
+      "selector": ":is(elo-icon,[elo-icon])",
+      "replacement": "an Icon is <i elo-icon>: select [elo-icon], or give it your own part with <Icon cx=\"…\">",
+      "pending": "P3",
+      "carriers": ["i.ls-icon", "div in span.ls-button__content"],
+      "legacySheets": ["components/button.css"],
+      "targetedBy": ["button"]
+    },
+    "table-td": {
+      "kind": "tag",
+      "selector": ":is(elo-table-td,[elo-table-td])",
+      "replacement": "Table.Td is <elo-table-td> (or its part table.td)",
+      "carriers": ["div.ls-table__td"]
+    },
+    "mb-4": {
+      "kind": "tag",
+      "selector": "[_cxclass_elo-iiiiii] > :is(elo-heading,[elo-heading])",
+      "replacement": "a Heading with a description is the Heading inside the heading.container part",
+      "carriers": ["h2.ls-heading"]
+    },
+    "small": {
+      "kind": "data",
+      "selector": ":is(elo-icon,[elo-icon])[data-size=\"small\"]",
+      "replacement": "data-size=\"small\" on Icon",
+      "carriers": ["i.ls-icon"]
+    },
+    "hover": {
+      "kind": "prop",
+      "selector": null,
+      "replacement": "state=\"hover\" on TextInput (renders data-force=\"hover\" on the field)",
+      "pending": "P3",
+      "planned": ":cx(text-input:field)[data-force=\"hover\"]",
+      "plannedSelector": "[_cxclass_elo-nnnnnn][data-force=\"hover\"]",
+      "legacySheets": ["components/text-input.css"],
+      "targetedBy": ["text-input"]
+    },
+    "content": {
+      "kind": "part",
+      "selector": "[_cxclass_elo-dddddd]",
+      "replacement": "the Button content part (button.content in the part map)",
+      "carriers": ["div.ls-button__content"]
+    },
+    "label": {
+      "kind": "part",
+      "selector": "[_cxclass_elo-uuuuuu]",
+      "replacement": "the Button label part (button.label in the part map); the Storybook-only color swatch's label has no successor",
+      "legacySheets": ["components/color.css"]
+    },
+    "tab-icon": {
+      "kind": "removed",
+      "selector": null,
+      "replacement": "no hook today: the icon sits in the Tabs item's first child <span>",
+      "carriers": ["span in a.ls-tabs__item"]
+    }
+  },
+  "dataComponent": {
+    "Tabs": {
+      "scope": "tabs",
+      "component": "Tabs",
+      "attr": "_cxclass_elo-kkkkkk",
+      "selector": ":is(elo-tabs,[elo-tabs])",
+      "partSelector": "[_cxclass_elo-kkkkkk]",
+      "identity": "elo-tabs",
+      "identityKind": "marker",
+      "identitySelector": "[elo-tabs]"
+    },
+    "Dock": {
+      "scope": "dock",
+      "component": "Dock",
+      "attr": "_cxclass_elo-mmmmmm",
+      "selector": ":is(elo-app-dock,[elo-app-dock])",
+      "partSelector": "[_cxclass_elo-mmmmmm]",
+      "identity": "elo-app-dock",
+      "identityKind": "tag",
+      "identitySelector": "elo-app-dock"
+    },
+    "Menu": { "scope": "dock", "attr": "_cxclass_elo-pppppp", "selector": "[_cxclass_elo-pppppp]", "note": "an inner element of Dock" }
+  },
+  "dataPart": {
+    "[data-part=\"header\"]": [
+      { "scope": "dock", "part": "dock.header", "attr": "_cxclass_elo-qqqqqq", "selector": "[_cxclass_elo-qqqqqq]" },
+      { "scope": "sidebar", "part": "sidebar.header", "attr": "_cxclass_elo-rrrrrr", "selector": "[_cxclass_elo-rrrrrr]" }
+    ],
+    "[data-part=\"demo\"]": [{ "scope": "website-switcher", "part": "website-switcher.demo", "attr": "_cxclass_elo-ssssss", "selector": "[_cxclass_elo-ssssss]" }]
+  },
+  "keyframes": { "ls-popover-fade-in": "elo-popover-fade-in", "ls-toast-fade-out": "elo-toast-fade-out" },
+  "api": [
+    { "package": "@livesession/eloquentui-react", "component": "Button", "removed": "className", "replacement": "cx forwarding (<Button cx=\"…\">)", "identity": "elo-button", "identitySelector": "[elo-button]" },
+    { "package": "@livesession/eloquentui-react", "component": "Popover", "removed": "className", "replacement": "the contentCx slot" },
+    { "package": "@livesession/eloquentui-react", "component": "TextInput", "removed": "inputClassName", "replacement": "the inputCx slot", "pending": "P3" },
+    { "package": "@livesession/eloquentui-react", "component": "Table.Td", "removed": "className", "replacement": "cx forwarding", "identity": "elo-table-td", "identitySelector": "elo-table-td" },
+    { "package": "@livesession/eloquentui-react", "removed": "export EmptyStateShade", "replacement": "EmptyState.Shade" }
+  ],
+  "selectorRewrites": [
+    { "scope": "tabs", "kind": "rewrite", "old": ".ls-tabs a", "new": "[_cxclass_elo-kkkkkk] [_cxclass_elo-llllll]", "why": "the tab link is the item part" },
+    { "scope": "tabs", "kind": "removed", "old": ".ls-tabs .ls-tabs__item.hover", "new": null, "why": "forced hover is data-force now" },
+    { "scope": "tabs", "kind": "added", "old": null, "new": "[_cxclass_elo-llllll][data-force=\"hover\"]", "why": "state=\"hover\" prop" }
+  ]
+}

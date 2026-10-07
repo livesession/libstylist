@@ -1,0 +1,18 @@
+/* a sheet with no component of its own (Tooltip renders a Popover with these parts) */
+.bubble {
+    padding: 4px 8px;
+    background: black;
+}
+
+.link {
+    color: inherit;
+}
+
+/* the link's icon has no rule of its own: only the shared icon rule styles it (as the real Button's
+   chevron and the Tooltip's link-icon) — a reset of it is made by guards alone */
+.link :is(.link-icon, :component(Icon)) {
+    --tooltip-icon: 1em;
+    display: flex;
+    width: var(--tooltip-icon);
+    margin-left: auto;
+}

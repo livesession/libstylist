@@ -1,0 +1,8 @@
+@stylist root Unbounded as unbounded;
+@stylist root Elementy as elementy;
+@stylist root Anything as anything;
+@stylist root Mapped as mapped display block;
+@stylist root Clamp as clamp display block;
+@stylist root Para as para display block;
+
+.unbounded, .elementy, .anything, .mapped, .clamp, .para { color: red; }

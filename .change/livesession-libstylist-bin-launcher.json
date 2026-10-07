@@ -1,0 +1,7 @@
+{
+  "packageName": "@livesession/libstylist",
+  "type": "patch",
+  "dependentChangeType": "none",
+  "email": "zdunekhere@gmail.com",
+  "comment": "The libstylist bin is a committed launcher (bin/libstylist.mjs) that loads the built CLI, so it is linked even when the workspace is installed before it is built."
+}

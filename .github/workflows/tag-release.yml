@@ -1,0 +1,19 @@
+name: Tag Release
+
+on:
+  push:
+    branches: [master]
+    paths: [".release/latest.json"]
+  workflow_dispatch:
+
+jobs:
+  tag:
+    permissions:
+      contents: write
+    uses: livesession/public-release-actions/.github/workflows/tag-release.yml@v0
+    secrets:
+      # A PAT with contents: write. Without it the tags are pushed by
+      # GITHUB_TOKEN, and GitHub does not start a workflow from an event that
+      # token raised — so the tags appear and Publish Tag never runs. Recovery
+      # without the secret: run the Publish Latest workflow by hand.
+      tag-token: ${{ secrets.TAG_RELEASE_TOKEN }}

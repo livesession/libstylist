@@ -1,0 +1,5 @@
+@stylist root Modal display block;
+@stylist root Modal.Header as header;
+
+.root { color: red; }
+.header { color: blue; }

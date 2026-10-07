@@ -1,0 +1,1 @@
+{ "name": "@fx/components", "private": true, "libstylist": { "prefix": "elo", "namespace": "core" } }

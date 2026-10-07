@@ -1,0 +1,12 @@
+@stylist root Card display block;
+@stylist root Chip as chip display inline-flex;
+@stylist root Ghost as ghost;
+
+.root { color: red; }
+.title { font-weight: 600; }
+.has-title { color: blue; }
+.unused { color: green; }
+.chip { color: red; }
+.pill { display: inline-block; }
+.stat { display: block; }
+.ghost { color: red; }

@@ -1,0 +1,5 @@
+/* Planted: RenderAccounts' sheet left in the core directory (src/css, not src/css/render) — it hashes and
+   names tags in namespace core, where no RenderAccounts is exported (S302). */
+@stylist root RenderAccounts;
+
+.root { gap: 8px; }

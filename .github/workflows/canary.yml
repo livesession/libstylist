@@ -1,0 +1,22 @@
+name: Canary
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: canary-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  canary:
+    permissions:
+      contents: read
+      packages: write
+    uses: livesession/public-release-actions/.github/workflows/canary.yml@v0
+    with:
+      # must EXACTLY match package.json packageManager (mismatch errors in action-setup)
+      pnpm-version: "10.33.2"
+      # the package publishes its compiled dist, so it is built before the publish
+      build-command: pnpm build

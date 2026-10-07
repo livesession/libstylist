@@ -1,0 +1,7 @@
+@stylist root Row as row display flex;
+
+.row { gap: 8px; }
+.node { position: relative; }
+.connector { position: absolute; }
+.content { flex: 1; }
+.action { margin-left: auto; }

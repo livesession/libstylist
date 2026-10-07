@@ -1,0 +1,6 @@
+@stylist root Panel display block;
+@stylist root Legacy as legacy display block;
+
+.root { color: red; }
+.legacy { color: blue; }
+.body { color: green; }

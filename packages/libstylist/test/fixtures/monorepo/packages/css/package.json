@@ -1,0 +1,5 @@
+{
+  "name": "@fx/css",
+  "private": true,
+  "libstylist": { "prefix": "elo", "hashLength": 6, "groups": { "components": { "namespace": "core" }, "player": { "namespace": "player" } } }
+}

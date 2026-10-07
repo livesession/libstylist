@@ -1,0 +1,5 @@
+@stylist root Card display block;
+@stylist root Card.Body as body display block;
+
+.root { color: red; }
+.body { color: blue; }

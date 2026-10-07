@@ -1,0 +1,17 @@
+/* Additive: every Button of the app gets a rounder, darker look; the design system's own rules stay. */
+@stylist override Button from "@ds/react";
+
+.root {
+    border-radius: 2px;
+    color: rgb(1, 2, 3);
+
+    &[data-size="small"] {
+        --btn-h: 20px;
+    }
+}
+:root[data-theme="dark"] .root {
+    color: rgb(250, 250, 250);
+}
+.root[data-loading] .loader {
+    opacity: 0.5;
+}

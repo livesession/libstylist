@@ -1,0 +1,7 @@
+{
+  "packageName": "@livesession/libstylist",
+  "type": "none",
+  "dependentChangeType": "none",
+  "email": "zdunekhere@gmail.com",
+  "comment": "Docs: the AUTHORING cx() and stylesheet examples use parts the imported text-input map really has (wrapper, icon); MIGRATING selects a tag and a marker that exist (elo-alert, [elo-button]); the README data-file-source example points at the Alert identity line (docs only)."
+}
