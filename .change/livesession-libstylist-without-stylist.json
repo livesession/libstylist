@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "runtime: withoutStylist(props) — props without the part attributes and markers cx(props) forwards, for a component whose root takes them while its other props spread onto an inner element (TextInput's native input). Moved from the React package and infinity, which each kept a copy; SPEC §6 and AUTHORING document it.",
-  "packageName": "@livesession/libstylist",
-  "email": "zdunekhere@gmail.com",
-  "dependentChangeType": "patch"
-}

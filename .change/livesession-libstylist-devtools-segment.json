@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "test: the real-repository expectations count the devtools package (seven packages; the devtools segment)",
-  "packageName": "@livesession/libstylist",
-  "email": "zdunekhere@gmail.com",
-  "dependentChangeType": "none"
-}

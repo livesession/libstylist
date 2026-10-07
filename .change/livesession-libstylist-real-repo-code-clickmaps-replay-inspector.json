@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "test: the real-repository expectations count the code, clickmaps and replay-inspector packages (ten packages; the clickmaps, code and replayinspector segments; the real-sheets smoke test compiles the code, devtools, clickmaps and replay-inspector groups too)",
-  "packageName": "@livesession/libstylist",
-  "email": "zdunekhere@gmail.com",
-  "dependentChangeType": "none"
-}

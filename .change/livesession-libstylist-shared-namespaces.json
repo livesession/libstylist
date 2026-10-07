@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "feat(libstylist): packages sharing namespaces — the checker config takes `packages[].namespaces` (equal to package.json's) and `packages[].sheets` (the package's own sheet directories, one css group per namespace: `crm-accounts`, `crm-accounts.render`) instead of a cssGroup, `css.dir` only when a package has a cssGroup, and one naming per namespace instead of one package per namespace; components are named from their implementation file, tags and scopes stay unique across packages (T201 names both packages), S302 checks the sheet's package and namespace and burndown counts per package. `partMapGroups` resolves a specifier serving several groups (a package's `#css`); `@livesession/libstylist/workspace` exports the sheet grouping",
-  "packageName": "@livesession/libstylist",
-  "email": "zdunekhere@gmail.com",
-  "dependentChangeType": "none"
-}
